@@ -61,13 +61,13 @@ variable "pod_network_cidr_block" {
 variable "master_instance_type" {
   type        = string
   description = "EC2 instance type for the master node (must have at least 2 CPUs)."
-  default     = "t2.medium"
+  default     = "t3.medium"
 }
 
 variable "worker_instance_type" {
   type        = string
   description = "EC2 instance type for the worker nodes."
-  default     = "t2.small"
+  default     = "t3.small"
 }
 
 variable "num_workers" {
